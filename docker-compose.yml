@@ -1,0 +1,13 @@
+go:
+    build: .
+    ports:
+        - "8080:8080"
+    volumes:
+        - public:/go/src/app/public
+        - view:/go/src/app/view
+compass:
+    image: stevevega/compass
+    command: watch
+    volumes:
+        - compass:/input
+        - public/css:/output
