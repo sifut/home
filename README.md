@@ -1,2 +1,3 @@
-# home
-SINFUT Home page
+# SINFUT Home Page
+
+Running at sinfut.com
