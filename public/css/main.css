@@ -403,7 +403,7 @@ a:before, a:after {
 }
 /* line 1, ../input/partials/_home.scss */
 #logo {
-  background: url(/img/logo.png) no-repeat center top;
+  background: url(/img/logo.svg) no-repeat center top;
   background-size: contain;
   height: 130px;
   margin-top: 50px;
