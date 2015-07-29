@@ -7,7 +7,7 @@ go:
         - view:/go/src/app/view
 compass:
     image: stevevega/compass
-    command: watch
+    command: watch --poll
     volumes:
         - compass:/input
         - public/css:/output
