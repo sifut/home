@@ -103,75 +103,80 @@ body {
 }
 
 /* line 85, ../input/partials/_base.scss */
+.navbar-inverse .navbar-nav > li > a:hover {
+  background-color: #e00e2d;
+}
+
+/* line 88, ../input/partials/_base.scss */
 .navbar-toggle {
   border-color: transparent;
   border: 0px solid transparent;
 }
 
-/* line 89, ../input/partials/_base.scss */
+/* line 92, ../input/partials/_base.scss */
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
   background-color: #16a085;
   color: white;
 }
 
-/* line 93, ../input/partials/_base.scss */
+/* line 96, ../input/partials/_base.scss */
 a img {
   background: white;
 }
 
-/* line 96, ../input/partials/_base.scss */
+/* line 99, ../input/partials/_base.scss */
 .odd a img {
   background: #f5f5f5;
 }
 
 /* Titles */
-/* line 100, ../input/partials/_base.scss */
+/* line 103, ../input/partials/_base.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway";
   font-weight: 200;
   color: #333;
 }
 
-/* line 105, ../input/partials/_base.scss */
+/* line 108, ../input/partials/_base.scss */
 h2 {
   font-size: 36px;
   color: #777;
 }
 
-/* line 109, ../input/partials/_base.scss */
+/* line 112, ../input/partials/_base.scss */
 h3 {
   font-size: 26px;
 }
 
 /* Paragraph & Typographic */
-/* line 113, ../input/partials/_base.scss */
+/* line 116, ../input/partials/_base.scss */
 p {
   line-height: 28px;
   margin-bottom: 20px;
 }
 
-/* line 117, ../input/partials/_base.scss */
+/* line 120, ../input/partials/_base.scss */
 p.large {
   font-size: 20px;
   margin-bottom: 50px;
 }
 
-/* line 121, ../input/partials/_base.scss */
+/* line 124, ../input/partials/_base.scss */
 .centered {
   text-align: center;
 }
 
-/* line 124, ../input/partials/_base.scss */
+/* line 127, ../input/partials/_base.scss */
 strong {
   font-weight: 700;
 }
 
-/* line 127, ../input/partials/_base.scss */
+/* line 130, ../input/partials/_base.scss */
 em {
   font-weight: 300;
 }
 
-/* line 130, ../input/partials/_base.scss */
+/* line 133, ../input/partials/_base.scss */
 pre {
   background: #ebebeb;
   border: none;
@@ -182,12 +187,12 @@ pre {
   line-height: 28px;
 }
 
-/* line 139, ../input/partials/_base.scss */
+/* line 142, ../input/partials/_base.scss */
 small {
   font-size: 12px;
 }
 
-/* line 142, ../input/partials/_base.scss */
+/* line 145, ../input/partials/_base.scss */
 blockquote, blockquote p {
   line-height: 28px;
   color: #999;
@@ -195,7 +200,7 @@ blockquote, blockquote p {
   font-style: italic;
 }
 
-/* line 148, ../input/partials/_base.scss */
+/* line 151, ../input/partials/_base.scss */
 blockquote {
   position: relative;
   margin: 0 0 40px -30px;
@@ -203,7 +208,7 @@ blockquote {
   border-left: 5px solid #3498db;
 }
 
-/* line 154, ../input/partials/_base.scss */
+/* line 157, ../input/partials/_base.scss */
 blockquote cite {
   position: absolute;
   bottom: -25px;
@@ -214,19 +219,19 @@ blockquote cite {
   font-weight: 300;
 }
 
-/* line 163, ../input/partials/_base.scss */
+/* line 166, ../input/partials/_base.scss */
 blockquote cite:before {
   content: "-- ";
 }
 
 /* Images */
-/* line 167, ../input/partials/_base.scss */
+/* line 170, ../input/partials/_base.scss */
 .overflow-image {
   margin-top: -65px;
 }
 
 /* Links */
-/* line 171, ../input/partials/_base.scss */
+/* line 174, ../input/partials/_base.scss */
 a {
   color: #4abcc5;
   word-wrap: break-word;
@@ -237,14 +242,14 @@ a {
   transition: color 0.1s ease-in, background 0.1s ease-in;
 }
 
-/* line 180, ../input/partials/_base.scss */
+/* line 183, ../input/partials/_base.scss */
 a:hover, a:focus {
   color: #c0392b;
   text-decoration: none;
   outline: 0;
 }
 
-/* line 185, ../input/partials/_base.scss */
+/* line 188, ../input/partials/_base.scss */
 a:before, a:after {
   -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
   -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -256,12 +261,12 @@ a:before, a:after {
 /* ==========================================================================
    Box Sections
    ========================================================================== */
-/* line 196, ../input/partials/_base.scss */
+/* line 199, ../input/partials/_base.scss */
 .white h1 {
   color: #999;
 }
 
-/* line 199, ../input/partials/_base.scss */
+/* line 202, ../input/partials/_base.scss */
 .white p {
   padding-top: 25px;
 }
@@ -269,21 +274,21 @@ a:before, a:after {
 /* ==========================================================================
    Image Mask
    ========================================================================== */
-/* line 207, ../input/partials/_base.scss */
+/* line 210, ../input/partials/_base.scss */
 .grid figure {
   margin: 0;
   position: relative;
   border: 1px solid #eee;
 }
 
-/* line 212, ../input/partials/_base.scss */
+/* line 215, ../input/partials/_base.scss */
 .grid figure img {
   width: 100%;
   display: block;
   position: relative;
 }
 
-/* line 217, ../input/partials/_base.scss */
+/* line 220, ../input/partials/_base.scss */
 .grid figcaption {
   position: absolute;
   top: 0;
@@ -293,7 +298,7 @@ a:before, a:after {
   background-color: #e00e2d;
 }
 
-/* line 225, ../input/partials/_base.scss */
+/* line 228, ../input/partials/_base.scss */
 .grid figcaption h5 {
   margin: 0;
   padding-top: 0px;
@@ -305,7 +310,7 @@ a:before, a:after {
   letter-spacing: 1px;
 }
 
-/* line 235, ../input/partials/_base.scss */
+/* line 238, ../input/partials/_base.scss */
 .grid figcaption a {
   text-align: left;
   padding: 5px 10px;
@@ -317,19 +322,19 @@ a:before, a:after {
 }
 
 /* Caption Style */
-/* line 245, ../input/partials/_base.scss */
+/* line 248, ../input/partials/_base.scss */
 .mask figure {
   overflow: hidden;
 }
 
-/* line 248, ../input/partials/_base.scss */
+/* line 251, ../input/partials/_base.scss */
 .mask figure img {
   -webkit-transition: -webkit-transform 0.4s;
   -moz-transition: -moz-transform 0.4s;
   transition: transform 0.4s;
 }
 
-/* line 253, ../input/partials/_base.scss */
+/* line 256, ../input/partials/_base.scss */
 .no-touch .mask figure:hover img, .mask figure.cs-hover img {
   -webkit-transform: translateY(-30px);
   -moz-transform: translateY(-30px);
@@ -337,7 +342,7 @@ a:before, a:after {
   transform: translateY(-30px);
 }
 
-/* line 259, ../input/partials/_base.scss */
+/* line 262, ../input/partials/_base.scss */
 .mask figcaption {
   height: 50px;
   width: 100%;
@@ -353,7 +358,7 @@ a:before, a:after {
   transition: transform 0.4s, opacity 0.1s 0.3s;
 }
 
-/* line 273, ../input/partials/_base.scss */
+/* line 276, ../input/partials/_base.scss */
 .no-touch .mask figure:hover figcaption, .mask figure.cs-hover figcaption {
   opacity: 1;
   -webkit-transform: translateY(0px);
@@ -365,7 +370,7 @@ a:before, a:after {
   transition: transform 0.4s, opacity 0.1s;
 }
 
-/* line 283, ../input/partials/_base.scss */
+/* line 286, ../input/partials/_base.scss */
 .mask figcaption a {
   position: absolute;
   top: 10px;
@@ -377,25 +382,25 @@ a:before, a:after {
    MEDIA QUERIES
    ========================================================================== */
 @media screen and (max-width: 1050px), screen and (max-device-width: 1050px) {
-  /* line 296, ../input/partials/_base.scss */
+  /* line 299, ../input/partials/_base.scss */
   body .header {
     background-attachment: scroll;
   }
 }
 /*ipad portrait*/
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  /* line 303, ../input/partials/_base.scss */
+  /* line 306, ../input/partials/_base.scss */
   .header {
     background-attachment: scroll;
   }
 }
 @media screen and (max-width: 769px) {
-  /* line 309, ../input/partials/_base.scss */
+  /* line 312, ../input/partials/_base.scss */
   #headerwrap h1 {
     font-size: 80px;
   }
 
-  /* line 312, ../input/partials/_base.scss */
+  /* line 315, ../input/partials/_base.scss */
   #headerwrap p {
     font-size: 30px;
     line-height: 38px;
