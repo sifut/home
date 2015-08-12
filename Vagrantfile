@@ -87,7 +87,7 @@ Vagrant.configure(2) do |config|
       # add vagrant user to docker
       usermod -aG docker vagrant
       # install docker-compose
-      curl -L https://github.com/docker/compose/releases/download/1.3.2/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+      curl -L https://github.com/docker/compose/releases/download/1.4.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
 chmod +x /usr/local/bin/docker-compose
       # set vagrant as working directory on vagrant ssh
       echo "cd /vagrant/sinfut" >> /home/vagrant/.bashrc

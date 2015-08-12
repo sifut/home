@@ -3,11 +3,11 @@ go:
     ports:
         - "8080:8080"
     volumes:
-        - public:/go/src/app/public
-        - view:/go/src/app/view
+        - ./public:/go/src/app/public
+        - ./view:/go/src/app/view
 compass:
     image: stevevega/compass
     command: watch --poll
     volumes:
-        - compass:/input
-        - public/css:/output
+        - ./compass:/input
+        - ./public/css:/output
