@@ -29,13 +29,13 @@
 </head>
 
 <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
-<div id="navbar-main"> 
+<div id="navbar-main">
   <!-- Fixed navbar -->
   <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a class="navbar-brand" href="#headerwrap">SINFUT</a> 
+        <a class="navbar-brand" href="#headerwrap">SINFUT</a>
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
@@ -49,14 +49,14 @@
           <li><a href="https://www.facebook.com/sinfutcr" target="_blank"><i class="fa fa-facebook-official"></i></a> </li>
         </ul>
       </div>
-      <!--/.nav-collapse --> 
+      <!--/.nav-collapse -->
     </div>
   </div>
 </div>
 
 <!-- ==== HEADERWRAP ==== -->
 <div id="headerwrap">
-  <header class="clearfix"> 
+  <header class="clearfix">
     <div id="logo"></div>
     <h1>Pasión en cifras</h1>
     <div class="col-sm-8 col-sm-offset-2">
@@ -66,7 +66,7 @@
     <a href="#portfolio" class="smoothScroll btn btn-lg">Vea nuestros análisis</a>
   </header>
 </div>
-<!-- /headerwrap --> 
+<!-- /headerwrap -->
 
 <!-- ==== ABOUT ==== -->
 <div id="about">
@@ -82,10 +82,10 @@
         <p>La visión de SINFUT a mediano y largo plazo es, ser una organización líder, brindando pauta en la información y análisis deportivo a nivel nacional e internacional. En el ámbito nacional, uno de los objetivos de SINFUT es posicionar nuestros productos permitiendo a nuestros clientes y usuarios observar, examinar, analizar e interpretar los datos de los aspectos más relevantes que arroja el Campeonato de Nacional de Fútbol de Primera División.</p>
       </div>
     </div>
-    <!-- row --> 
+    <!-- row -->
   </div>
 </div>
-<!-- container --> 
+<!-- container -->
 
 <!-- ==== SERVICES ==== -->
 <div id="services">
@@ -109,10 +109,10 @@
         <p>Respaldado por la experticie del equipo desarrolando índices, análisis multivariados, análisis probabilísticos, proyecciones y pronósticos, encuestas y otras técnicas.</p>
       </div>
     </div>
-    <!-- row --> 
+    <!-- row -->
   </div>
 </div>
-<!-- container --> 
+<!-- container -->
 
 <!-- ==== PORTFOLIO ==== -->
 <div id="portfolio">
@@ -125,27 +125,41 @@
       </div>
     </div>
     <!-- /row -->
-    <div class="container">
+    <div class="container col-sm-8 col-sm-offset-2 centered">
       <div class="row">
-        
-        <div class="portfolio-item col-sm-6 col-sm-offset-3 centered">
-          <div class="grid mask">
-            <figure> <img class="img-responsive" src="/img/portfolio/2015-verano.png" alt="">
-              <figcaption>
-                <h5>UNAFUT - Verano 2015</h5>
-                <a target="_blank" href="/file/2015-verano.pdf" class="btn btn-default">Ver</a>
-              </figcaption>
-            </figure>
+
+        <div id="portfolio-carousel" class="carousel slide " data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#portfolio-carousel" data-slide-to="0" class="active"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <a target="_blank" href="/file/2015-verano.pdf">
+                <img src="/img/portfolio/2015-verano.png" alt="Verano 2015" />
+              </a>
+            </div>
           </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#portfolio-carousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#portfolio-carousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-        
       </div>
-      <!-- /row --> 
+      <!-- /row -->
     </div>
-    <!-- /row --> 
+    <!-- /row -->
   </div>
 </div>
-<!-- /container --> 
+<!-- /container -->
 
 <!-- ==== TEAM MEMBERS ==== -->
 <div id="team">
@@ -172,9 +186,9 @@
       </div>
     </div>
   </div>
-  <!-- row --> 
+  <!-- row -->
 </div>
-<!-- container --> 
+<!-- container -->
 
 <!-- ==== CONTACT ==== -->
 <div id="contact">
@@ -185,12 +199,12 @@
       <div class="col-sm-8 col-sm-offset-2 centered">
         <p>Ponte en contacto con SINFUT. Si tienes alguna pregunta o comentario sobre nuestros productos o servicios envíanos un correo electrónico.</p>
       </div>
-      <div class="col-sm-8 col-sm-offset-2 centered"> 
-        <i class="fa fa-envelope-o fa-2x"></i>        
+      <div class="col-sm-8 col-sm-offset-2 centered">
+        <i class="fa fa-envelope-o fa-2x"></i>
         <p>contacto@sinfut.com</p>
       </div>
     </div>
-    <!-- row --> 
+    <!-- row -->
   </div>
 </div>
 <!-- container -->
@@ -210,8 +224,8 @@
 </div>
 
 <!-- Bootstrap core JavaScript
-    ================================================== --> 
-<!-- Placed at the end of the document so the pages load faster --> 
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="/js/smoothscroll.js"></script>
