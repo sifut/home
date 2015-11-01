@@ -14,10 +14,10 @@ config = {
         mail: {
             transport: 'SMTP',
             options: {
-                service: 'Gmail',
+                service: 'Mailgun',
                 auth: {
-                    user: 'sinfutcr@gmail.com',
-                    pass: process.env.GMAIL_PASS
+                    user: 'postmaster@mail.sinfut.com',
+                    pass: process.env.MAILGUN_PASS
                 }
             }
         },
