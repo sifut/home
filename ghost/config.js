@@ -11,7 +11,16 @@ config = {
     // Configure your URL and mail settings here
     production: {
         url: 'http://blog.sinfut.com',
-        mail: {},
+        mail: {
+            transport: 'SMTP',
+            options: {
+                service: 'Gmail',
+                auth: {
+                    user: 'sinfutcr@gmail.com',
+                    pass: process.env.GMAIL_PASS
+                }
+            }
+        },
         database: {
             client: 'sqlite3',
             connection: {
