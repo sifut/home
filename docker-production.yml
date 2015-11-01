@@ -1,4 +1,19 @@
 go:
     build: .
+ghost:
+    image: ghost:latest
+    environment:
+        NODE_ENV: production
+    volumes:
+        - ./ghost/config.js:/var/lib/ghost/config.js
+        - ~/docker/volumes/sinfut/data/ghost:/var/lib/ghost
+nginx:
+    image: nginx:latest
+    links:
+        - go
+        - ghost
     ports:
-        - "80:8080"
+        - "80:80"
+    volumes:
+        - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+        - ./nginx/vhost:/etc/nginx/conf.d:ro
