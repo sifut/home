@@ -1,1 +1,0 @@
-{"nfs":{"sinfut-root":{"id":"sinfut-root","type":"nfs","map_uid":0,"map_gid":0,"guestpath":"/vagrant/sinfut","hostpath":"/Users/steve/Shok/sinfut/home","disabled":false,"nfs_udp":true,"nfs_version":3,"uuid":"4016640312"}}}
