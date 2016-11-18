@@ -15,6 +15,7 @@ ghost:
         NODE_ENV: development
     volumes:
         - ./ghost/config.js:/var/lib/ghost/config.js
+        - ./ghost/themes:/var/lib/ghost/themes
         - ~/docker/volumes/sinfut/data/ghost:/var/lib/ghost
 nginx:
     image: nginx:latest
