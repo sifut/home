@@ -14,11 +14,7 @@ config = {
         mail: {
             transport: 'SMTP',
             options: {
-                service: 'Mailgun',
-                auth: {
-                    user: 'postmaster@mail.sinfut.com',
-                    pass: process.env.MAILGUN_PASS
-                }
+            service: 'Sendmail',
             }
         },
         database: {
