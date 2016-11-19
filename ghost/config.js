@@ -14,9 +14,13 @@ config = {
         mail: {
             transport: 'SMTP',
             options: {
-            service: 'Sendmail',
+                service: 'Mailgun',
+                auth: {
+                    user: 'postmaster@sandbox95c4e092543c405db6b9142b50f10d91.mailgun.org',
+                    pass: process.env.MAILGUN_PASS
+                }
             }
-        },
+         },
         database: {
             client: 'sqlite3',
             connection: {
