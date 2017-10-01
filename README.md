@@ -7,6 +7,11 @@ Make sure you have your [Github](https://github.com/) and [DockerHub](https://hu
 ### Setup docker host
 - [Install docker](http://docs.docker.com/installation)
 
+### Add required env variables
+In your the host set the following env variables:
+- SIFUT_MAIL_USER
+- SIFUT_MAIL_PASS
+
 ### Setup docker app
 - In your docker host, go to the app root path and run ```docker login``` then enter your DockerHub username and password as requested.
 - Run ```docker-compose up -d```.
