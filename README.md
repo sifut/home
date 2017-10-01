@@ -20,6 +20,7 @@ In your the host set the following env variables:
 ### Accessing the app
 - Home: http://localhost
 - API: http://localhost/api/
+- Blog: http://localhost:3001
 
 ## Contributors
 - @jimmfallas
