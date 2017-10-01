@@ -17,3 +17,12 @@ services:
       - SIFUT_MAIL_PASS
     volumes:
       - ./api:/srv
+
+  blog:
+    build: blog
+    image: sifut/blog
+    ports:
+      - "3001:2368"
+    volumes:
+      - ./blog:/var/lib/ghost/content
+
