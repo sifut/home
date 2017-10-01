@@ -15,3 +15,7 @@ Make sure you have your [Github](https://github.com/) and [DockerHub](https://hu
 ### Accessing the app
 - Home: http://localhost
 - API: http://localhost/api/
+
+## Contributors
+- @jimmfallas
+- @pablonavarro2017
