@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sistema de Información de Fútbol (SIFUT)">
+    <meta name="author" content="SIFUT">
+    <!-- Favicon -->
+    <link href="img/favicon.png" rel="shortcut icon">
+    <title>SIFUT - Pasión en Cifras</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Custom CSS -->
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">
+    <link href="css/estiloEmpleo.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/modernizr.custom.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body data-spy="scroll" data-offset="1" data-target="#navbar-main">
+    <input type="checkbox" id="chkMM" class="mmItem dNone">
+    <div class="fullCubierta fondoOpaco zi1 dNone" onclick="ocultarMenu()"></div>
+    <div class="bgNegro mmItem zi3 fixed fullWidth btAzul">
+        <label for="chkMM"><i class="fa fa-bars cfff f30 fullPadding pointer" style="vertical-align: middle" aria-hidden="true"></i></label>
+        <a href="#headerwrap" onclick="ocultarMenu()"><img src="img/logo-blanco.png" height="60px" alt="logo" class="fullPadding5"></a>
+    </div>
+    <!-- ==== INICIO DE NAV BAR ==== -->
+    <div id="navbar-main" class="topnav">
+        <div class="container">
+            <div class="topnav-content">
+                <div class="topnav-logo soloPC">
+                    <a href="#headerwrap"><img src="img/logo-blanco.png" height="60px" alt="logo" class="fullPadding5"></a>
+                </div>
+                <ul class="nav">
+                    <li><a href="#headerwrap" onclick="ocultarMenu()">Inicio</a></li>
+                    <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nosotros <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#about" onclick="ocultarMenu()">Misión</a></li>
+                            <li><a href="#equipoTrabajo" onclick="ocultarMenu()">Equipo de Trabajo</a> </li>
+                            <!--                                    Muy Pronto-->
+                            <!--                                    <li><a href="#responsabilidadSocial">Responsabilidad Social</a> </li>-->
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Servicios y Productos<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#services" onclick="ocultarMenu()">Ver Nuestros Servicios y Productos</a></li>
+                            <li><a href="file/SINFUT-CATALOGO%20JUGADORES.pdf" target="_blank" onclick="ocultarMenu()">Jugadores</a></li>
+                            <li><a href="file/SINFUT-CATALOGO%20CLUBES.pdf" target="_blank" onclick="ocultarMenu()">Clubes</a> </li>
+                            <li><a href="file/SIFUT-CATALOGO%20MEDIOS.pdf" target="_blank" onclick="ocultarMenu()">Medios de Comunicación</a></li>
+                            <li><a href="file/SIFUT-CATALOGO%20PATROCINADORES.pdf" target="_blank" onclick="ocultarMenu()">Patrocinadores</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#clientes" onclick="ocultarMenu()">Nuestros Clientes</a></li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Nuestros Análisis<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://blog.sinfut.com/" target="_blank" onclick="ocultarMenu()">Blog</a></li>
+                            <!--                                    Muy Pronto-->
+                            <!--                                    <li><a href="#estadisticass">Estadísticas (Sistema de Información)</a> </li>-->
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#contact" onclick="ocultarMenu()">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- ==== FIN DE NAV BAR ==== -->
+    <!-- ==== HEADERWRAP ==== -->
+    <div id="headerwrap"> <img id="header-bg" src="img/header-bg.png" alt="">
+        <header class="clearfix container">
+            <div class="enlaces-header"><a href="#services" class="btn">Ver Servicios y Productos</a></div>
+        </header>
+    </div>
+    <!-- /headerwrap -->
+    <!-- ==== ABOUT ==== -->
+    <div id="about">
+        <div class="container">
+            <div class="row white">
+                <h2 class="aCentro">NOSOTROS</h2>
+                <hr>
+                <div class="col-md-6"> <img class="img-responsive" src="img/about.jpg" alt="About"> </div>
+                <div class="col-md-6">
+                    <h3 class="aCentro marginTop25">MISIÓN</h3>
+                    <p class="f22 interline1_5" align="justify">Ser una empresa líder en la sistematización, análisis y divulgación de información y estadísticas deportivas, brindando un producto de alta calidad, confiable, independiente y con soluciones innovadoras, permitiendo un excelente servicio para satisfacer las necesidades de nuestros clientes y usuarios. </p>
+                </div>
+            </div>
+            <!-- row -->
+        </div>
+        <div class="container paddingT50" id="equipoTrabajo">
+            <div class="row">
+                <h3 class="aCentro">NUESTRO EQUIPO</h3>
+                <br>
+                <p class="aCentro f22">El equipo de trabajo involucra profesionales con experiencia en áreas de:</p>
+                <br> </div>
+            <div class="row">
+                <div class="col-sm-4 aCentro fullPadding"><img src="img/iconos/ico_estadisticos.png" alt="c8" />
+                    <h4>Estadística</h4></div>
+                <div class="col-sm-4 aCentro fullPadding"> <img src="img/iconos/ico_ingComputacion.png" alt="c8" />
+                    <h4>Ingeniería en Computación</h4> </div>
+                <div class="col-sm-4 aCentro fullPadding"> <img src="img/iconos/ico_disenadores_graficos.png" alt="c8" />
+                    <h4>Diseño Gráfico</h4> </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 aCentro fullPadding"> <img src="img/iconos/ico_administrador.png" alt="c8" />
+                    <h4>Administración de Empresas</h4> </div>
+                <div class="col-sm-4 aCentro fullPadding"> <img src="img/iconos/ico_mercadologo.png" alt="c8" />
+                    <h4>Mercadeo</h4> </div>
+                <div class="col-sm-4 aCentro fullPadding"><img src="img/iconos/ico_fotografos.png" alt="c8" />
+                    <h4>Fotografía</h4></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 aCentro fullPadding"><img src="img/iconos/ico_economistas.png" alt="c8" />
+                    <h4>Economía</h4> </div>
+                <div class="col-sm-4 aCentro fullPadding"> <img src="img/iconos/ico_periodistas.png" alt="c8" />
+                    <h4>Periodismo</h4> </div>
+                <div class="col-sm-4 aCentro fullPadding"> <img src="img/iconos/ico_digitadores.png" alt="c8" />
+                    <h4>Digitación</h4> </div>
+            </div>
+            <div class="row paddingT50">
+                <div class="aCentro">
+                    <!-- Quitar el Style y meterlo como clase del CSS -->
+                    <h4>¿Te interesa formar parte de nuestro equipo? </h4>
+                    <div class="enlaces-header marginTop15">
+                        <button type="button" class="btn btn-info btn-lg cBAzul" data-toggle="modal" data-target="#myModal">Regístrate &nbsp;<i class="fa fa-futbol-o fa-lg cBola" style="color: #ffffff;">  </i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--   Inicio de Pop Up    -->
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close bgRojo" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title aCentro">Llenar los siguientes campos</h4> </div>
+                    <div class="modal-body noPadding">
+                        <form name='formulario1' id="formulario1" onsubmit="return sendMail(this,1);" action='api/' method="post" class="contact_form" enctype="multipart/form-data">
+                            <div>
+                                <ul>
+                                    <li>
+                                        <label for="name">Nombre:</label>
+                                        <input type='text' name='Nombre' id='Nombre' placeholder="Nombre" required> <span class="form_hint">Formato correcto: "Nombre (s)"</span> </li>
+                                    <li>
+                                        <label for="apellidos">Apellidos:</label>
+                                        <input type='text' name='Apellidos' id='Apellidos' placeholder="Apellidos" required> <span class="form_hint">Formato correcto: "Apellidos"</span> </li>
+                                    <li>
+                                        <label for="telefono">Teléfono:</label>
+                                        <input type='text' name='Telefono' id='Telefono' placeholder="Teléfono" required> <span class="form_hint">Formato correcto: "5555-5555"</span> </li>
+                                    <li>
+                                        <label for="email">E-mail:</label>
+                                        <input type='email' name='E-mail' id='E-mail' placeholder="tu@correo.com" required> <span class="form_hint">Formato correcto: "ejemplo@gmail.com"</span> </li>
+                                    <li>
+                                        <label for="message">Descripción:</label>
+                                        <textarea name="mensaje" cols="40" rows="3" placeholder="Cuéntanos un poco de ti"></textarea> <span class="form_hint">Ingresar información adicional</span> </li>
+                                    <li>
+                                        <label for="adjuntar archivo">Currículum (PDF):</label>
+                                        <input type='file' name='archivo1' id='archivo1' placeholder="carga tu curriculum" required class="fileUploader"> </li>
+                                    <li>
+                                        <div class="paddingTop15">
+                                            <!-- <button type='submit'> Enviar JS </button>-->
+                                            <button class="boton fullPadding" type='submit'>Enviar Mensaje </button>
+                                            <button id="borrar" class="boton fullPadding" type='reset' value='Reiniciar formulario'>Borrar Datos </button>
+                                            <div id="idEnviando" class="feedBKmail oculto"> <img src="img/iconos/enviandoMail.gif" class="icoMail" /> <span class="caption f16">Enviando</span> </div>
+                                            <div id="idExito" class="feedBKmail oculto"> <img src="img/iconos/enviadoMail.png" class="icoMail" /> <span class="caption f16">Envío Exitoso</span> </div>
+                                            <div id="idError" class="feedBKmail oculto"> <img src="img/iconos/errorMail.png" class="icoMail" /> <span class="caption f10">ERROR Intente de Nuevo</span> </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default " data-dismiss="modal">Cerrar Formulario</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--   Fin de PopUp   -->
+    </div>
+    <!-- container -->
+    <!-- ==== SERVICES ==== -->
+    <div id="services">
+        <div class="container">
+            <div class="row aCentro">
+                <h2 class="aCentro">SERVICIOS Y PRODUCTOS</h2>
+                <hr>
+                <p class="aCentro f22">Selecciona los catálogos que tenemos para tí</p>
+                <br>
+                <div class="flexFila jcCenter inlineB ">
+                    <div class="fullMargin30">
+                        <a href="file/SINFUT-CATALOGO%20JUGADORES.pdf" target="_blank" ><img src="img/servicios/jugadores.png" alt="jugadores" class="imgServ pointer" />
+                            <h4>Jugadores</h4> </a>
+                    </div>
+                    <div class="fullMargin30">
+                        <a href="file/SINFUT-CATALOGO%20CLUBES.pdf" target="_blank" > <img src="img/servicios/clubes.png" alt="clubes" class="imgServ pointer" />
+                            <h4>Clubes</h4> </a>
+                    </div>
+                    <div class="fullMargin30">
+                        <a href="file/SIFUT-CATALOGO%20MEDIOS.pdf" target="_blank" > <img src="img/servicios/medios_comunicacion.png" alt="medios_comunicacion" class="imgServ pointer" />
+                            <h4>Medios de <br> Comunicación</h4></a>
+                    </div>
+                    <div class="fullMargin30">
+                        <a href="file/SIFUT-CATALOGO%20PATROCINADORES.pdf" target="_blank" > <img src="img/servicios/patrocinadores.png" alt="patrocinadores" class="imgServ pointer" />
+                            <h4>Patrocinadores</h4></a>
+                    </div>
+                </div>
+            </div>
+            <!-- row -->
+            <div class="row paddingT50">
+                <h4>¡Solicita nuestros productos y servicios!</h4>
+                <button type="button" class="btn btn-info btn-lg cBRojo marginTop15" data-toggle="modal" data-target="#myModal2">Haz click aquí &nbsp;<i class="fa fa-thumbs-o-up pointer" style="color: #fff;"></i></button>
+            </div>
+            <!--   Inicio de Pop Up    -->
+            <!-- Modal -->
+            <div class="modal fade" id="myModal2" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close bgRojo" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Llenar Los Siguientes Campos</h4> </div>
+                        <div class="modal-body">
+                            <form name='formulario' id="formulario" onsubmit="return sendMail(this,2);" action='api/' method="post" class="contact_form" enctype="multipart/form-data">
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <label for="name">Nombre:</label>
+                                            <input type='text' name='Nombre' id='Nombre' placeholder="Nombre" required> <span class="form_hint">Formato correcto: "Nombre (s)"</span> </li>
+                                        <li>
+                                            <label for="apellidos">Apellidos:</label>
+                                            <input type='text' name='Apellidos' id='Apellidos' placeholder="Apellidos" required> <span class="form_hint">Formato correcto: "Apellidos"</span> </li>
+                                        <li>
+                                            <label for="telefono">Teléfono:</label>
+                                            <input type='text' name='Telefono' id='Telefono' placeholder="Teléfono" required> <span class="form_hint">Formato correcto: "5555-5555"</span> </li>
+                                        <li>
+                                            <label for="email">E-mail:</label>
+                                            <input type='email' name='E-mail' id='E-mail' placeholder="tu@correo.com" required> <span class="form_hint">Formato correcto: "ejemplo@gmail.com"</span> </li>
+                                        <li>
+                                            <label for="message">Descripción del Servicio:</label>
+                                            <textarea name="mensaje" cols="20" rows="3" placeholder="¿Cuáles servicios o productos te han interesado?"></textarea> <span class="form_hint">Ingresar información adicional</span> </li>
+                                        <li class="pull-left ">
+                                            <button class="fullPadding boton" type='submit'>Enviar Mensaje </button>
+                                            <button id="borrar" class="fullPadding boton" type='reset' value='Reiniiar formulario'>Borrar Datos </button>
+                                            <div id="idEnviando2" class="feedBKmail oculto"> <img src="img/iconos/enviandoMail.gif" class="icoMail" /> <span class="caption f16">Enviando</span> </div>
+                                            <div id="idExito2" class="feedBKmail oculto"> <img src="img/iconos/enviadoMail.png" class="icoMail" /> <span class="caption f16">Envío Exitoso</span> </div>
+                                            <div id="idError2" class="feedBKmail oculto"> <img src="img/iconos/errorMail.png" class="icoMail" /> <span class="caption f10">ERROR Intente de Nuevo</span> </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar Formulario</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--   Fin de PopUp   -->
+        </div>
+    </div>
+    <!-- container -->
+    <!-- ==== PORTFOLIO ==== -->
+    <div id="clientes">
+        <div class="container ">
+            <br>
+            <br>
+            <div class="row">
+                <h2 class="aCentro">NUESTROS CLIENTES</h2>
+                <hr>
+                <br> </div>
+            <!-- /row -->
+            <div class="row">
+                <!-- Slider 1 -->
+                <div class="col-sm-4 col-sm-offset-1 aCentro ">
+                    <div id="portfolio-carousel2" class="carousel slide " data-ride="carousel">
+                        <!-- Indicators -->
+                        <!--                        <ol class="carousel-indicators">-->
+                        <!--                            <li data-target="#portfolio-carousel2" data-slide-to="0" class="active"></li>-->
+                        <!--                            <li data-target="#portfolio-carousel2" data-slide-to="1"></li>-->
+                        <!--                            <li data-target="#portfolio-carousel2" data-slide-to="2"></li>-->
+                        <!--                        </ol>-->
+                        <!-- Wrapper  for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <a target="_blank" href="http://www.yashinquesada.com/"> <img src="img/portfolio/YQ.png" alt="Yashin Quesada" /> </a>
+                            </div>
+                            <!--                                Otra imagen para el slider -->
+                            <!--                                <div class="item">-->
+                            <!--                                    <a target="_blank" href="/file/2015-invierno-jornadas-1-6.pdf"> <img src="/img/portfolio/c5.png" alt="c5" /> </a>-->
+                            <!--                                </div>-->
+                        </div>
+                        <!-- Flecha para pasar a otra imagen -->
+                        <!--                            <a class="left carousel-control" href="#portfolio-carousel2" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>-->
+                        <!--                            <a class="right carousel-control" href="#portfolio-carousel2" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>--></div>
+                </div>
+                <!-- Slider 2 -->
+                <div class=" col-sm-6 ">
+                    <div id="portfolio-carousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <!--                        <ol class="carousel-indicators">-->
+                        <!--                            <li data-target="#portfolio-carousel" data-slide-to="0" class="active"></li>-->
+                        <!--                            <li data-target="#portfolio-carousel" data-slide-to="1"></li>-->
+                        <!--                            <li data-target="#portfolio-carousel" data-slide-to="2"></li>-->
+                        <!--                        </ol>-->
+                        <!-- Wrapper  for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active paddingT50">
+                                <a target="_blank" href="https://www.facebook.com/ticofutcr/"> <img src="img/portfolio/ticofut.jpg" alt="ticofut" class="" /> </a>
+                            </div>
+                            <!--                                Otra imagen para el slider -->
+                            <!--                                <div class="item">-->
+                            <!--                                    <a target="_blank" href="/file/2015-invierno-jornadas-1-6.pdf"> <img src="/img/portfolio/c5.png" alt="c5" /> </a>-->
+                            <!--                                </div>-->
+                        </div>
+                        <!-- Flecha para pasar a otra imagen -->
+                        <!--                            <a class="left carousel-control" href="#portfolio-carousel" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>-->
+                        <!--                            <a class="right carousel-control" href="#portfolio-carousel" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>--></div>
+                </div>
+            </div>
+            <!-- /row -->
+        </div>
+    </div>
+    <!-- /container -->
+    <!-- ==== CONTACT ==== -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <h2 class="aCentro">CONTÁCTENOS</h2>
+                <hr>
+                <div class="col-sm-8 col-sm-offset-2 aCentro">
+                    <p>Ponte en contacto con SIFUT. Si tienes alguna pregunta o comentario sobre nuestros productos o servicios envíanos un correo electrónico o contáctanos a través de nuestras redes sociales.</p>
+                </div>
+                <div class="col-sm-2 col-sm-offset-1 aCentro"> <a href="mailto:sifutcr@gmail.com?subject=Contacto Sifut"><i style="color: darkblue;" class="fa fa-envelope-o fa-2x"></i>
+                    <p>sifutcr@gmail.com</p></a> </div>
+                <div class="col-sm-2 aCentro"> <a href="https://twitter.com/sifutcr" target="_blank"><i style="color: #0084b4;" class="fa fa-twitter fa-2x"></i>
+                    <p>Twitter</p></a> </div>
+                <div class="col-sm-2 aCentro"> <a href="https://www.facebook.com/sifutcr" target="_blank"><i style="color: #3b5998;" class="fa fa-facebook-official fa-2x"></i>
+                    <p>Facebook</p></a> </div>
+                <div class="col-sm-2 aCentro"> <a href="https://www.instagram.com/sifutcr" target="_blank"><i style="color: #fb3958;" class="fa fa-instagram fa-2x"></i>
+                    <p>Instagram</p> </a> </div>
+                <div class="col-sm-2 aCentro">
+                    <a href="https://api.whatsapp.com/send?phone=50688652274" target="_blank"> <i style="color: #4dc247;" class="fa fa-whatsapp fa-2x"></i>
+                        <p>Whatsapp +50688652274</p>
+                    </a>
+                </div>
+            </div>
+            <!-- row -->
+        </div>
+    </div>
+    <!-- container -->
+    <div id="footerwrap">
+        <div>
+            <div class="row">
+                <div class="col-md-12 aCentro">
+                    <p id="idYear" class="copyright"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ====  SOCIAL NETWORKS ==== -->
+    <div id="redesFlotantes" class="redes">
+        <div>
+            <a href="https://www.facebook.com/sifutcr" target="_blank" class="fa fa-facebook redItem facebook"></a>
+        </div>
+        <div>
+            <a href="https://www.instagram.com/sifutcr" target="_blank" class="fa fa-instagram redItem instagram"></a>
+        </div>
+        <div>
+            <a href="https://twitter.com/sifutcr" target="_blank" class="fa fa-twitter redItem twitter"></a>
+        </div>
+        <div>
+            <a href="https://api.whatsapp.com/send?phone=50688652274" target="_blank" class="fa fa-whatsapp redItem whatsapp"></a>
+        </div>
+        <div>
+            <a href="mailto:sifutcr@gmail.com?subject=Contacto Sifut" class="fa fa-envelope redItem correo"></a>
+        </div>
+    </div>
+    <!-- ==== FIN SOCIAL NETWORKS ==== -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/scrollSuave.js"></script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-63084412-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</body>
+
+</html>
