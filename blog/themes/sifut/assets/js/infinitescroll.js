@@ -81,3 +81,7 @@ $(function ($) {
 
     infiniteScroll();
 });
+
+document.oncontextmenu = function(){
+    return false;
+}

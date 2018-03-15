@@ -529,7 +529,8 @@ body {
 
 .outer {
     position: relative;
-    padding: 0 4vw
+    /*    padding: 0 4vw*/
+    /*AQUI ERA NIGAAAAAAAAAAAAAAAAAAAAAAA*/
 }
 
 .inner {
@@ -677,6 +678,7 @@ body {
 .nav {
     display: -ms-flexbox;
     display: flex;
+    flex-direction: row;
     padding: 0;
     list-style: none;
 }
@@ -819,20 +821,13 @@ body {
         padding-right: 0;
         padding-left: 0
     }
-    .site-nav-left {
-        margin-right: 0;
-        padding-left: 4vw
-    }
-    .site-nav-right {
-        display: none
-    }
 }
 
 .post-feed {
     position: relative;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin: 0 -20px;
+/*    margin: 0;*/
     padding: 40px 0 0
 }
 
@@ -849,7 +844,7 @@ body {
     flex-direction: column;
     min-height: 300px;
     overflow: hidden;
-    margin: 0 20px 40px;
+    margin: 0 10px 30px;
     background: #fff 50%;
     background-size: cover;
     border-radius: 5px;
@@ -983,7 +978,7 @@ body {
         padding-top: 5vw
     }
     .post-card {
-        margin: 0 20px 5vw
+        margin: 0 10px 20px;
     }
 }
 
@@ -1037,9 +1032,9 @@ body {
 .post-full-content {
     position: relative;
     min-height: 230px;
-    margin: 0 50px;
+    margin: 0 30px;
     margin-top: -50px;
-    padding: 50px;
+    padding: 30px;
     font-family: Georgia, serif;
     font-size: 2.2rem;
     line-height: 1.6em;
@@ -1048,9 +1043,9 @@ body {
 
 @media (max-width:650px) {
     .post-full-content {
-        padding: 15px;
-        margin: 15px;
-        margin-top: -25px;
+        padding: 12px;
+        margin: 0px 15px;
+        margin-top: -20px;
     }
 }
 
@@ -1163,7 +1158,7 @@ body {
     margin: 1.5em auto
 }
 
-@media (max-width:1040px) {
+@media (max-width:1060px) {
     .post-full-content img,
     .post-full-content video {
         width: 100%
