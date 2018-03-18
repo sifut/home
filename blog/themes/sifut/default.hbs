@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-
     {{!-- Document Settings --}}
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,14 +10,28 @@
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+   <!--JavaScript Carousel & Bootstrap -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- FontAwesome -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--JavaScript Carousel & Bootstrap -->
+   
     {{!-- Styles'n'Scripts --}}
     <link rel="stylesheet" type="text/css" href="{{asset "built/screen.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "built/estilos.css"}}" />
+    <script src="{{asset "built/customScript.js"}}"></script>
 
+    
     {{!-- This tag outputes SEO meta+structured data and other important settings --}}
     {{ghost_head}}
-
 </head>
-<body class="{{body_class}}">
+<body class="{{body_class}} maxh100 ofShow">
 
     <div class="site-wrapper">
 
@@ -30,10 +43,9 @@
             <div class="site-footer-content inner">
                 <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>
                 <nav class="site-footer-nav">
-                    <a href="{{@blog.url}}">Latest Posts</a>
+                    <a href="{{@blog.url}}">Ultimas publicaciones</a>
                     {{#if @blog.facebook}}<a href="{{facebook_url @blog.facebook}}" target="_blank">Facebook</a>{{/if}}
                     {{#if @blog.twitter}}<a href="{{twitter_url @blog.twitter}}" target="_blank">Twitter</a>{{/if}}
-                    <a href="https://ghost.org" target="_blank">Ghost</a>
                 </nav>
             </div>
         </footer>
@@ -55,12 +67,7 @@
     </div>
     {{/if}}
 
-    {{!-- jQuery + Fitvids, which makes all video embeds responsive --}}
-    <script
-        src="https://code.jquery.com/jquery-3.2.1.min.js"
-        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous">
-    </script>
+    {{!-- Fitvids, which makes all video embeds responsive --}}
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
 
     {{#if pagination.pages}}

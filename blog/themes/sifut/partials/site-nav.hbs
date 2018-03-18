@@ -1,29 +1,53 @@
+<script>
+    function ocultarMenu() {
+        document.getElementById('chkMM').checked = false;
+    }
+</script>
+<input type="checkbox" id="chkMM" class="dNone">
+<div class="fullCubierta fondoOpaco"  onclick="ocultarMenu()"></div>
+<label for="chkMM" class="botonMostrarMenu"><i class="fa fa-bars" style="vertical-align: middle" aria-hidden="true"></i></label>
 <nav class="site-nav">
     <div class="site-nav-left">
         {{^is "home"}}
-            {{#if @blog.logo}}
-                <a class="site-nav-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>
-            {{else}}
-                <a class="site-nav-logo" href="{{@blog.url}}">{{@blog.title}}</a>
-            {{/if}}
-        {{/is}}
-        {{#if @blog.navigation}}
-            {{navigation}}
+        {{#if @blog.logo}}
+        <a class="site-nav-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}"/></a>
+        {{else}}
+        <a class="site-nav-logo" href="{{@blog.url}}">{{@blog.title}}</a>
         {{/if}}
+        {{/is}}
+        {{#is "home"}}
+        {{#if @blog.logo}}
+            <a class="site-nav-logo itemMovil" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}"/></a>
+        {{/if}}
+        {{/is}}
+
+        {{#if @blog.navigation}}
+        {{navigation}}
+        {{/if}}
+        <ul class="nav">
+            <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fútbol Internacional</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/tag/laligabbva">La Liga - España</a></li>
+                    <li><a href="/tag/premierleague">Premier League - Inglaterra</a></li>
+                    <li><a href="/tag/seriea">Serie A - Italia</a></li>
+                    <li><a href="/tag/championsleague">Champions League</a></li>
+                </ul>
+            </li>
+        </ul>
     </div>
     <div class="site-nav-right">
         <div class="social-links">
             {{#if @blog.facebook}}
-                <a class="social-link social-link-fb" href="{{facebook_url @blog.facebook}}" target="_blank">{{> "icons/facebook"}}</a>
+            <a class="social-link social-link-fb" href="{{facebook_url @blog.facebook}}" target="_blank">{{> "icons/facebook"}}</a>
             {{/if}}
             {{#if @blog.twitter}}
-                <a class="social-link social-link-tw" href="{{twitter_url @blog.twitter}}" target="_blank">{{> "icons/twitter"}}</a>
+            <a class="social-link social-link-tw" href="{{twitter_url @blog.twitter}}" target="_blank">{{> "icons/twitter"}}</a>
             {{/if}}
         </div>
         {{#if @labs.subscribers}}
-            <a class="subscribe-button" href="#subscribe">Subscribe</a>
+        <a class="subscribe-button" href="#subscribe">Subscribe</a>
         {{else}}
-            <a class="rss-button" href="http://cloud.feedly.com/#subscription/feed/{{@blog.url}}/rss/" target="_blank">{{> "icons/rss"}}</a>
+        <a class="rss-button" href="http://cloud.feedly.com/#subscription/feed/{{@blog.url}}/rss/" target="_blank">{{> "icons/rss"}}</a>
         {{/if}}
     </div>
 </nav>
