@@ -6,7 +6,7 @@ localhost sifut.net {
 }
 
 www.sifut.net {
-    redir https://sifut/net{uri} permanent
+    redir https://sifut.net{uri} permanent
 }
 
 blog.sifut.net {
