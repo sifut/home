@@ -1,22 +1,13 @@
-version: '2'
+version: "2"
 services:
-
   home:
     build: .
     image: sifut/home
     ports:
-      - "80:8080"
+      - "80:80"
+      - "443:443"
     volumes:
       - ./public:/usr/share/nginx/html
-
-  api:
-    build: api
-    image: sifut/api
-    environment:
-      - SIFUT_MAIL_USER
-      - SIFUT_MAIL_PASS
-    volumes:
-      - ./api:/srv
 
   blog:
     build: blog
@@ -25,4 +16,3 @@ services:
       - "3001:2368"
     volumes:
       - ./blog:/var/lib/ghost/content
-

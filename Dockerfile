@@ -1,4 +1,4 @@
-FROM nginx:1.9-alpine
+FROM caddy/caddy:2.0.0-rc.2-alpine
 
-COPY nginx/vhost /etc/nginx/conf.d
-COPY public /usr/share/nginx/html
+COPY caddy/Caddyfile /etc/caddy/Caddyfile
+COPY public /site

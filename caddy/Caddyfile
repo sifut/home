@@ -1,0 +1,15 @@
+localhost sifut.net {
+    encode zstd gzip
+    file_server browse
+    templates
+    root * /site
+}
+
+www.sifut.net {
+    redir https://sifut/net{uri} permanent
+}
+
+blog.sifut.net {
+    encode zstd gzip
+    reverse_proxy http://blog:2368
+}
